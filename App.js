@@ -22,8 +22,6 @@ export default function App() {
       .then((data) => setPokemons(data));
   }, []);
 
-  console.log(pokemons);
-
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
@@ -36,6 +34,7 @@ export default function App() {
               flexDirection: "row",
               alignItems: "center",
               justifyContent: "center",
+              gap: 16,
             }}
           >
             <Image
